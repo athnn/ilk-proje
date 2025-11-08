@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - BilgisayarTamirci</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigasyon -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-laptop-medical"></i>
+                    <span>BilgisayarTamirci</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetler.html">Hizmetler</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html" class="active">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Bize ulaşın, size yardımcı olalım</p>
+        </div>
+    </section>
+
+    <!-- İletişim İçeriği -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- İletişim Formu -->
+                <div class="contact-form-container">
+                    <h2>Bize Mesaj Gönderin</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ad Soyad *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Hizmet Türü</label>
+                            <select id="service" name="service">
+                                <option value="">Seçiniz</option>
+                                <option value="laptop">Laptop Tamir</option>
+                                <option value="desktop">Masaüstü Tamir</option>
+                                <option value="data">Veri Kurtarma</option>
+                                <option value="virus">Virüs Temizleme</option>
+                                <option value="network">Ağ Kurulumu</option>
+                                <option value="performance">Performans Artırma</option>
+                                <option value="os">İşletim Sistemi</option>
+                                <option value="onsite">Yerinde Servis</option>
+                                <option value="other">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- İletişim Bilgileri -->
+                <div class="contact-info-container">
+                    <h2>İletişim Bilgileri</h2>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefon</h3>
+                                <p>+90 555 123 45 67</p>
+                                <p>+90 212 987 65 43</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>E-posta</h3>
+                                <p>info@bilgisayartamirci.com</p>
+                                <p>destek@bilgisayartamirci.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Adres</h3>
+                                <p>Atatürk Caddesi No: 123</p>
+                                <p>Kadıköy, İstanbul</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Çalışma Saatleri</h3>
+                                <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                                <p>Cumartesi: 10:00 - 16:00</p>
+                                <p>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-contact">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-icons">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harita -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Konumumuz</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Atatürk Caddesi No: 123, Kadıköy, İstanbul</p>
+                    <p class="map-note">* Harita entegrasyonu için Google Maps API anahtarı gereklidir</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SSS -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sıkça Sorulan Sorular</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Tamir süresi ne kadar?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Çoğu tamir işlemini aynı gün içinde tamamlıyoruz. Arızanın türüne göre süre 2-3 saat ile 2-3 gün arasında değişebilir. Acil durumlar için öncelikli servis seçeneğimiz mevcuttur.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Garanti veriyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, tüm tamir ve bakım işlemlerimizde 6 ay garanti veriyoruz. Değiştirilen parçalar için üretici garantisi geçerlidir.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Yerinde servis hizmeti sunuyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, evinize veya işyerinize gelerek teknik destek sağlıyoruz. Akşam ve hafta sonu randevuları için lütfen bizimle iletişime geçin.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Verilerim güvende mi?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kesinlikle. Müşteri verilerinin gizliliği bizim için çok önemlidir. Tüm işlemlerimizde sıkı güvenlik protokolleri uyguluyoruz ve verilerinize yetkisiz erişimi engelliyoruz.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Hangi ödeme yöntemlerini kabul ediyorsunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nakit, kredi kartı ve banka havalesi ile ödeme kabul ediyoruz. Kredi kartı ile taksit seçeneklerimiz mevcuttur.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Ücretsiz ön inceleme yapıyor musunuz?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Evet, arıza tespiti ve fiyat teklifi için ücretsiz ön inceleme yapıyoruz. Teklifi beğenmezseniz herhangi bir ücret ödemeden cihazınızı geri alabilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Acil Durumlar İçin 7/24 Ulaşın!</h2>
+            <p>Teknik destek ekibimiz her zaman yanınızda</p>
+            <a href="tel:+905551234567" class="btn btn-light"><i class="fas fa-phone"></i> +90 555 123 45 67</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3><i class="fas fa-laptop-medical"></i> BilgisayarTamirci</h3>
+                    <p>Profesyonel PC tamir ve bakım hizmetinde 15 yıllık deneyim.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Hizmetler</h4>
+                    <ul>
+                        <li><a href="hizmetler.html">Laptop Tamir</a></li>
+                        <li><a href="hizmetler.html">Masaüstü Tamir</a></li>
+                        <li><a href="hizmetler.html">Veri Kurtarma</a></li>
+                        <li><a href="hizmetler.html">Virüs Temizleme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-phone"></i> +90 555 123 45 67</li>
+                        <li><i class="fas fa-envelope"></i> info@bilgisayartamirci.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</li>
+                        <li><i class="fas fa-clock"></i> Pzt-Cmt: 09:00-18:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BilgisayarTamirci. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
